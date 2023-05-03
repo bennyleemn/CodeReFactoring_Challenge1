@@ -2,55 +2,67 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1vw;
 }
 
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+h1 {
+    /* display: inline-block; */
+    font-size: 2rem;
+    flex: start;
+
 }
 
-.header h1 .seo {
+h1 > span {
     color: #d9dcd6;
+    font-size: inherit;
 }
 
-.header div {
-    padding-top: 15px;
+nav {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    
 }
 
-.header div ul {
+nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+header nav ul li {
+    
+    margin-left: 30px;
+    padding-top: 10px;
+    
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-.hero {
+#marketing-meeting {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -69,9 +81,9 @@ p {
     margin-left: 25px;
 }
 
-.content {
+#content {
     width: 75%;
-    display: inline-block;
+    display:flex;
     margin-left: 20px;
 }
 
@@ -89,12 +101,9 @@ p {
 .benefit-ldc {
     margin-bottom: 32px;
     color: #ffffff;
-    text-align: center;
+
 }
-/* removed original 'h1...h3' code, added text-align to class "benefit-ldc"
-    margin-bottom: 10px;
-    text-align: center;
-}
+
 
 .benefit-brand h3 {
     margin-bottom: 10px;
@@ -105,7 +114,7 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
-*/
+
 .benefit-lead img {
     display: block;
     margin: 10px auto;
